@@ -1,11 +1,19 @@
 
 # Input a number from the user and print the square of the number in a message
 
+# number = int(input('Enter a number: '))
+# square = number ** 2
+# print(square)
 
 
 
 # input a word and blank out all letters that are not vowels with '='
 
+word = input('Enter a word: ')
+for letter in word:
+    if letter == 'a' or 'e' or 'i' or 'o' or 'u':
+        new_word = word.replace('a', '=').replace('e', '=').replace('i', '=').replace('o', '=').replace('u', '=')
+print(new_word)
 
 
 # Create a list of words - go through the list and sum the total number of characters in all words
